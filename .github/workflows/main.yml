@@ -53,4 +53,4 @@ jobs:
           service: docker-react
           region: ${{ secrets.GCP_REGION }}
           image: ${{ secrets.GCP_REGION }}-docker.pkg.dev/${{ secrets.GCP_PROJECT_ID }}/docker-react/frontend:${{ github.sha }}
-          flags: --allow-unauthenticated
+          flags: --allow-unauthenticated --port 80
